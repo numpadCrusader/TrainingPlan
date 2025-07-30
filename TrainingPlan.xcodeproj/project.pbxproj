@@ -12,6 +12,11 @@
 		0418B6422E3A63E6000A198A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B6412E3A63E6000A198A /* ViewController.swift */; };
 		0418B6472E3A63E8000A198A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0418B6462E3A63E8000A198A /* Assets.xcassets */; };
 		0418B64A2E3A63E8000A198A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0418B6492E3A63E8000A198A /* Base */; };
+		0418B6532E3A663C000A198A /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 0418B6522E3A663C000A198A /* ProgressHUD */; };
+		0418B6562E3A664C000A198A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0418B6552E3A664C000A198A /* SnapKit */; };
+		0418B6592E3A69FB000A198A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0418B6582E3A69FB000A198A /* GoogleService-Info.plist */; };
+		0418B6622E3A6F90000A198A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0418B6612E3A6F90000A198A /* FirebaseAuth */; };
+		0418B6642E3A6F90000A198A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0418B6632E3A6F90000A198A /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,7 @@
 		0418B6462E3A63E8000A198A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0418B6492E3A63E8000A198A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0418B64B2E3A63E8000A198A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0418B6582E3A69FB000A198A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0418B6532E3A663C000A198A /* ProgressHUD in Frameworks */,
+				0418B6642E3A6F90000A198A /* FirebaseFirestore in Frameworks */,
+				0418B6622E3A6F90000A198A /* FirebaseAuth in Frameworks */,
+				0418B6562E3A664C000A198A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,7 @@
 				0418B6462E3A63E8000A198A /* Assets.xcassets */,
 				0418B6482E3A63E8000A198A /* LaunchScreen.storyboard */,
 				0418B64B2E3A63E8000A198A /* Info.plist */,
+				0418B6582E3A69FB000A198A /* GoogleService-Info.plist */,
 			);
 			path = TrainingPlan;
 			sourceTree = "<group>";
@@ -80,6 +91,12 @@
 			dependencies = (
 			);
 			name = TrainingPlan;
+			packageProductDependencies = (
+				0418B6522E3A663C000A198A /* ProgressHUD */,
+				0418B6552E3A664C000A198A /* SnapKit */,
+				0418B6612E3A6F90000A198A /* FirebaseAuth */,
+				0418B6632E3A6F90000A198A /* FirebaseFirestore */,
+			);
 			productName = TrainingPlan;
 			productReference = 0418B63A2E3A63E6000A198A /* TrainingPlan.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +125,11 @@
 				Base,
 			);
 			mainGroup = 0418B6312E3A63E6000A198A;
+			packageReferences = (
+				0418B6512E3A663C000A198A /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				0418B6542E3A664C000A198A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0418B6602E3A6F90000A198A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0418B63B2E3A63E6000A198A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,6 +146,7 @@
 			files = (
 				0418B6472E3A63E8000A198A /* Assets.xcassets in Resources */,
 				0418B64A2E3A63E8000A198A /* Base in Resources */,
+				0418B6592E3A69FB000A198A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +382,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0418B6512E3A663C000A198A /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.4;
+			};
+		};
+		0418B6542E3A664C000A198A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		0418B6602E3A6F90000A198A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 11.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0418B6522E3A663C000A198A /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0418B6512E3A663C000A198A /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		0418B6552E3A664C000A198A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0418B6542E3A664C000A198A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		0418B6612E3A6F90000A198A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0418B6602E3A6F90000A198A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0418B6632E3A6F90000A198A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0418B6602E3A6F90000A198A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0418B6322E3A63E6000A198A /* Project object */;
 }
